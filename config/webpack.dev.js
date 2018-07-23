@@ -62,6 +62,16 @@ module.exports={
 						}
 					}
 				]
+			},
+			//js loaders
+			{
+				test:/\.js$/,
+				use:[
+					{
+						loader:"babel-loader"
+					}
+				],
+				exclude:/node_modules/ //排除那个文件
 			}
 		]
 	}
